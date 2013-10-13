@@ -25,3 +25,13 @@ LOCAL_MODULE := PocoZip
 LOCAL_SRC_FILES := ../lib/android/$(TARGET_ARCH_ABI)/libPocoZip.a
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
 include $(PREBUILT_STATIC_LIBRARY)
+
+LOCAL_MODULE := PocoData
+LOCAL_SRC_FILES := ../lib/android/$(TARGET_ARCH_ABI)/libPocoData.a
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
+include $(PREBUILT_STATIC_LIBRARY)
+
+LOCAL_MODULE := PocoDataSQLite
+LOCAL_SRC_FILES := ../lib/android/$(TARGET_ARCH_ABI)/libPocoDataSQLite.a
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
+include $(PREBUILT_STATIC_LIBRARY)
