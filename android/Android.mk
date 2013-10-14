@@ -35,3 +35,23 @@ LOCAL_MODULE := PocoDataSQLite
 LOCAL_SRC_FILES := ../lib/android/$(TARGET_ARCH_ABI)/libPocoDataSQLite.a
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
 include $(PREBUILT_STATIC_LIBRARY)
+
+LOCAL_MODULE := PocoCrypto
+LOCAL_SRC_FILES := ../lib/android/$(TARGET_ARCH_ABI)/libPocoCrypto.a
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
+include $(PREBUILT_STATIC_LIBRARY)
+
+LOCAL_MODULE := PocoNetSSL
+LOCAL_SRC_FILES := ../lib/android/$(TARGET_ARCH_ABI)/libPocoNetSSL.a
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
+include $(PREBUILT_STATIC_LIBRARY)
+
+LOCAL_MODULE := ssl
+LOCAL_SRC_FILES := ../lib/android/$(TARGET_ARCH_ABI)/libssl.a
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
+include $(PREBUILT_STATIC_LIBRARY)
+
+LOCAL_MODULE := crypto
+LOCAL_SRC_FILES := ../lib/android/$(TARGET_ARCH_ABI)/libcrypto.a
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
+include $(PREBUILT_STATIC_LIBRARY)
